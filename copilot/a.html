@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Copilot CSS -->
+        <link rel="stylesheet" href="copilot.css">
+    </head>
+
+        <body>
+<!-- why is "data-copilot" not resolving -->
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Copilot JS -->
+        <script src="copilot.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Initialize Copilot
+                $('.container').copilot({
+                    // Specify the steps
+                    steps: [
+                        {
+                            // Specify the title for the step
+                            title: 'Heading',
+                            // Specify the content for the step
+                            content: 'This is a heading',
+                            // Specify the element that this step will target
+                            target: '[data-copilot="heading"]',
+                            // Specify the position of the tooltip
+                            placement: 'bottom'
+                        },
+                        {
+                            title: 'List',
+                            content: 'This is a list',
+                            target: '[data-copilot="list"]',
+                            placement: 'bottom'
+                        },
+                        {
+                            title: 'Button',
+                            content: 'This is a button',
+                            target: '[data-copilot="button"]',
+                            placement: 'bottom'
+                        }
+                    ]
+                });
+            });
+        </script>
+            
+        
+
+
+
+        
+
+
+        
+    </body>
+</html>
